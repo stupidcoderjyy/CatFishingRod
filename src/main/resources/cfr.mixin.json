@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8.2",
+  "package": "cfr.mixins",
+  "compatibilityLevel": "JAVA_11",
+  "mixins": [
+      "CreeperMixin",
+      "SwellGoalMixin"
+  ],
+  "client": [
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

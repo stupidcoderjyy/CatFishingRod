@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "${id}",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "${description}",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"client": ["cfr.core.CatFishingRodClient"],
+		"server": ["cfr.core.CatFishingRodServer"],
+        "fabric-datagen": ["cfr.modding.datagen.DataGenEntryPoint"]
+    },
+	"mixins": ["cfr.mixin.json"],
+	"depends": {
+		"fabricloader": ">=0.14.18",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
